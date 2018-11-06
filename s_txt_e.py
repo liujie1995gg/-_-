@@ -12,7 +12,7 @@ def take_middle_text(txt,txt_s,txt_e='',seeks=0,seeke=0):
             raise 1
         l_1 = len(txt_s)
         if txt_e:
-            s_2 = txt.find(txt_e)
+            s_2 = txt.find(txt_e,s_1)
             if s_1 == -1 or s_2 == -1:
                 return False
             return txt[s_1+l_1:s_2]
